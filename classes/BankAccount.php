@@ -7,7 +7,7 @@ class BankAccount implements IfaceBankAccount
 
     public function __construct(Money $openingBalance)
     {
-        $this->balance = $openingBalance;
+        $this->balance = $openingBalance->value();
     }
 
     public function balance()
